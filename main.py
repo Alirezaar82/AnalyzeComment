@@ -12,7 +12,8 @@ model = load_model('model.h5')
 
 def analyze_comment():
     sentence = entry.get() 
-    this_sentence = sentence.split(' ')
+    this_sentence = sentence.lower().split(' ')
+    print(this_sentence)
     
     try:
        
